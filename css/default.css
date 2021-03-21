@@ -170,6 +170,10 @@ body._lock {
   overflow: hidden;
 }
 
+._mb {
+  margin: 0 0 40px 0 !important;
+}
+
 .head {
   padding: 0 0 40px 0;
 }
