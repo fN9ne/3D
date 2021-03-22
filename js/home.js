@@ -1,4 +1,12 @@
 $(document).ready(function() {
+	$('.timetable').click(function(e) {
+		if (!e.target.closest('.timetable__close')) {
+			$(this).addClass('_active');
+		}
+	});
+	$('.timetable__close').click(function() {
+		$('.timetable').removeClass('_active');
+	});
 	if ($(".researches").length > 0) {
 		let main_tab = $(".researches-tab");
 		let slide = $(".researches-slide");
