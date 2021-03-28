@@ -216,12 +216,6 @@
   transition: 0.4s all ease;
 }
 
-.main-block__timetable._active {
-  cursor: auto;
-  right: 0;
-  opacity: 1;
-}
-
 .researches__tab-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1082,16 +1076,9 @@
     padding: 20px 130px 20px 40px;
   }
 
-  .main-block__timetable._active:hover {
-    cursor: auto;
+  .main-block__timetable:hover {
     right: 0;
     opacity: 1;
-  }
-
-  .main-block__timetable:hover {
-    cursor: pointer;
-    right: -250px;
-    opacity: 0.6;
   }
 
   .question__head:hover {
@@ -1104,6 +1091,12 @@
 
   .tomography__tab:hover {
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 993px) {
+  .timetable__close {
+    display: none;
   }
 }
 
@@ -1220,7 +1213,20 @@
   }
 
   .main-block__timetable {
+    margin: -30% 0 0 0;
     position: static;
+    -webkit-transform: translate(0, 70%);
+        -ms-transform: translate(0, 70%);
+            transform: translate(0, 70%);
+    opacity: 0.4;
+  }
+
+  .main-block__timetable._active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    margin: 30px 0 0 0;
   }
 
   .researches__tab-container {

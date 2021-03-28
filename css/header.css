@@ -29,6 +29,10 @@
   margin: 0 calc(20px + 70 * ((100vw - 768px) / (1920 - 768))) 0 0;
 }
 
+.header__logo img {
+  max-width: 54px;
+}
+
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
